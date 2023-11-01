@@ -44,6 +44,11 @@ figcaption {
     font-weight: 400;  
     font-style: italic;
     padding: 2em 2em ; /* You want three values. */
+
+}
+
+section {
+    padding: 1em 2em 3em;
 }
 
 h1 {
@@ -71,7 +76,7 @@ h2 {
 }
 
 h3 {
-	padding: 1em 1.6em 0.5em;
+	padding: 1em 1.5em 0em;
 	font-size: 1.2em;
 	color: #fc7506;
 	text-transform: uppercase;
@@ -84,7 +89,7 @@ h3 {
 
 
 ul {
-	margin: 1em 1em 1em;
+	/* margin: 1em 1em 1em; */
 }
 
 li { 
