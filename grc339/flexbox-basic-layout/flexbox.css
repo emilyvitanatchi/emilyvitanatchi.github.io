@@ -1,0 +1,110 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+
+img {
+	max-width: 100%;
+	}
+
+div.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 70em;
+	margin: auto;
+
+}
+
+header {
+	/* flex: 1 0 100%; */
+	/* flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0; */
+	flex:1 0 100%;
+}
+
+article {
+	/* flex: 2 0 30en; */
+	/* flex-basis: 20em;
+	flex-grow: 1;
+	flex-shrink: 0; */
+	flex:2 0 35em;
+}
+
+ol {
+	margin: auto;
+	list-style-position: outside;
+	padding: 0 0 0 .1em;
+}
+
+h2 {
+	padding-top: 1em;
+}
+
+aside {
+	/* flex: 1 0 15en; */
+	/* flex-basis: 20em;
+	flex-grow: 1;
+	flex-shrink: 0; */
+	flex:1 0 15em;
+
+}
+
+section {
+	background: rgb(230,230,230);
+	margin-left: 1em;
+	padding: 1em;
+	margin-bottom: 1em; 
+	/* padding: 0.5em 0.5em 0.5em;
+	margin-bottom: 1em; 
+	margin-left: 1em;
+	padding: 0.1em 0 0.1em 0.1em; */
+}
+
+figure {
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+h3 {
+	margin: 1em 0 0;
+}
+
+footer {
+	/* flex: 1 0 100%; */
+	/* flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0; */
+	flex:1 0 100%; 
+	border-top: 0.1rem solid rgb(130,130,130)
+}
+
+@media screen and (max-width: 500px){
+	div.container{
+		flex-direction: column;
+	}
+	header, article, aside, footer{
+		flex-basis: auto;
+	}
+
+/* @media screen and (max-width: 60em) {
+
+
+	div{
+		max-width: 80em;
+		margin:auto;
+	}
+
+    header {
+        padding: 1.5em ;
+    }
+} */
