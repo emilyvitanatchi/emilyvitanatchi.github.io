@@ -1,0 +1,120 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	box-sizing: border-box;
+    padding-bottom: 2em;
+	}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
+}
+
+
+h1 {
+	width: 8em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+nav{
+    display:block;
+}
+
+
+li {
+    display: inline;
+    text-decoration: none;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(62, 102, 166);
+}
+
+caption {
+    padding-bottom: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+h2 {
+    text-decoration: none;
+    font-size: 2.0em;
+    font-weight: bolder;
+    color: rgb(62, 102, 166);
+}
+
+section.tertiary h2{
+    font-size: 1em;
+    padding-top: 0.5em;
+    border-top: 0.1rem solid;
+}
+
+section.tertiary p{
+    padding-bottom: 1em;
+}
+
+figure{
+    padding-top: 1em;
+}
+
+figcaption{
+    font-style: italic;
+    font-family: sans-serif;
+	line-height: 1.4em;
+	color: rgb(70, 73, 81);
+    padding-bottom: 2em;
+}
+
+aside{
+    background: rgb(204, 208, 251);
+    padding: 0.5em;
+}
+
+footer{
+  /* padding: 1em 1em 2em;
+  background: rgb(30,30,30); */
+  color: rgb(248, 246, 249);
+    background: rgb(62, 102, 166);
+}
+
+
+/* @media screen and (min-width: 60em) {
+
+	main ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 4em;
+		
+	}
+	nav ul li {
+		display: inline;
+		font-size: 1.5em;
+		margin-left: 0.75em;
+	}
+
+	/* nav ul {
+		margin-top: 1em;
+	} */
+
+	/* div{
+		max-width: 80em;
+		margin:auto;
+	}
+
+    header {
+        padding: 1.5em ;
+    }
+} */ */
