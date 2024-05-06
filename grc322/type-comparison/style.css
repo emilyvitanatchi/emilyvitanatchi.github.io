@@ -1,0 +1,73 @@
+/*CSS DOCUMENT */
+
+
+body {
+	background-color: #fafafa;
+	font-family: serif;
+	color: #000;
+	
+}
+
+div.container {
+	max-width: 40em;
+	margin: auto;
+	
+}
+
+img {
+	width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+figcaption{
+	font-size: 1em;
+	padding-bottom: 1em;
+	font-family: "courier-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, p, ul, ol, li {
+	margin: 0; 
+	padding:0; 
+	font-size: 1em; 
+	font-weight: normal;
+
+}
+
+h1 {
+	font-size: 2em; 
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin-top: 2em;
+	color:rgb(8, 82, 191);
+}
+
+h2 {
+	font-size: 1.7em; 
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding-top:1em;
+	color:rgb(194, 44, 14);
+}
+
+h3 {
+	font-size: 1.2em; 
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding-top: 1em;
+	color:rgb(13, 128, 21);
+}
+
+p{
+	padding-bottom:1em;
+	font-family: "courier-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+}
