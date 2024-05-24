@@ -9,6 +9,7 @@ img {
 
 body {
     font-family: sans-serif;
+    background-color: #222;
 }
 
 
@@ -20,7 +21,7 @@ div.container, div.home-container {
 
 
 h1 {
-	width: 7em;
+	width: 12em;
     /* padding-bottom: 1em;
     padding-top: 1em; */
     margin-top: 1em;
@@ -35,22 +36,22 @@ h1, nav {
     margin-bottom: 2em;
 } */
 
-header, h2, p {
+header, p {
     margin: .2rem .5rem 0;
 }
 
 h2 {
     /* text-decoration: none; */
-    font-weight: bolder;
-    color: rgb(78, 102, 127);
-    font-family: serif;
+    color: rgb(238, 103, 25);
+    font-family: "bd-orange-variable", sans-serif;
+    font-variation-settings: "wght" 600;
     /* padding-top:0.5rem; */
+    margin-top: 1em;
 }
 
 article h2 {
     font-size: 2.5em;
     /* margin: 0.75em 0em 0.5em 0em; */
-    margin-top: 1em;
     margin-bottom: .5em;
 }
 
@@ -63,11 +64,11 @@ section.mainstory h2 {
 }
 
 section.secondary h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 aside{
-    background: rgb(204, 208, 251);
+    background: rgb(26, 127, 243);
     padding: 1em 0.5em;
     margin-top: 1em;
 }
@@ -76,6 +77,11 @@ aside{
 section.tertiary h2{
     padding-top: 0.5em;
     border-top: 1px solid;
+    font-size: 1.5rem;
+}
+
+section.tertiary p{
+    margin-bottom: 1em;
 }
 
 a{
@@ -89,30 +95,43 @@ nav ul li {
 }
 
 nav ul li a {
-    font-weight: bold;
-    color: #579;
+    color: rgb(243, 249, 215);
+    font-family: "bd-orange-variable", sans-serif;
+    font-variation-settings: "wght" 600;
+    font-size: 1.5em;
+    margin-right: 0.7em;
 }
 
 nav ul li a:hover {
-    color: #f00;
+    color: rgb(26, 127, 243);
 }
 
 footer {
-    background-color: rgb(78, 102, 127);
+    background-color: rgb(26, 127, 243);
     width: 100%;
     padding: .5em 0;
-    color: #eee;
+    color: #222;
     box-sizing: border-box;
     padding-left: 1em;
 }
 
 figcaption{
-    font-style: italic;
-    font-family: sans-serif;
+    /* font-family: "newsserif-huge-variable", sans-serif;
+    font-variation-settings: "wght" 100; */
+    font-family: "newsserif-text-variable", sans-serif;
+    font-variation-settings: "wght" 400;
 	/* line-height: 1.4em; */
-	color: rgb(70, 73, 81);
+	color: rgb(26, 127, 243);
     /* padding-bottom: 1rem; */
     margin: 0.2rem 0.5rem 1em;
+}
+
+p{
+    color: rgb(243, 249, 215);
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 120%;
 }
 
 
@@ -165,8 +184,6 @@ figure{
     }
 
     figcaption {
-        color:#555;
-        font-style: italic;
         margin: .2rem 0 1em;
     }
 
