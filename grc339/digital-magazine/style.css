@@ -13,21 +13,20 @@ body {
 }
 
 
-div.container, div.home-container {
-    max-width: 40em;
+div.container, div.home-container, div.gallery {
+    max-width:40em;
     margin: auto;
     /* position: relative; */
 }
 
 
 h1 {
-	width: 12em;
-    /* padding-bottom: 1em;
-    padding-top: 1em; */
-    margin-top: 1em;
+	width: 13em;
+    margin-top: 2em;
+    margin-bottom:1em;
 }
 
-h1, nav {
+nav {
     margin-bottom: 1em;
 }
 
@@ -36,47 +35,51 @@ h1, nav {
     margin-bottom: 2em;
 } */
 
-header, p {
+header {
     margin: .2rem .5rem 0;
 }
 
 h2 {
     /* text-decoration: none; */
-    color: rgb(238, 103, 25);
+    color: rgb(246, 177, 66);
     font-family: "bd-orange-variable", sans-serif;
     font-variation-settings: "wght" 600;
     /* padding-top:0.5rem; */
-    margin-top: 1em;
-}
-
-article h2 {
-    font-size: 2.5em;
+    margin-top: 1rem;
+    font-size: 3.3em;
     /* margin: 0.75em 0em 0.5em 0em; */
     margin-bottom: .5em;
+    
 }
+
 
 article p {
     margin-bottom: 1em;
+    font-size: 1.3em;
 }
+
+section.mainstory p, section.secondary p, section.tertiary p{
+    font-size: 1em;
+} 
 
 section.mainstory h2 {
     font-size: 2.5em;
+    line-height: 90%;
 }
 
 section.secondary h2 {
     font-size: 1.8em;
 }
 
-aside{
-    background: rgb(26, 127, 243);
+/* aside{
     padding: 1em 0.5em;
-    margin-top: 1em;
-}
+    
+} */
 
 
 section.tertiary h2{
     padding-top: 0.5em;
-    border-top: 1px solid;
+    border-top: 1px solid rgb(26, 127, 243);
     font-size: 1.5rem;
 }
 
@@ -106,13 +109,14 @@ nav ul li a:hover {
     color: rgb(26, 127, 243);
 }
 
-footer {
-    background-color: rgb(26, 127, 243);
+footer p {
     width: 100%;
-    padding: .5em 0;
-    color: #222;
-    box-sizing: border-box;
-    padding-left: 1em;
+    padding-top:0.5em;
+    padding-bottom: 1.5em;
+    color: rgb(243, 249, 215);
+    border-top: 1px solid rgb(26, 127, 243);
+    margin-top: 2.5em;
+    
 }
 
 figcaption{
@@ -123,7 +127,7 @@ figcaption{
 	/* line-height: 1.4em; */
 	color: rgb(26, 127, 243);
     /* padding-bottom: 1rem; */
-    margin: 0.2rem 0.5rem 1em;
+    
 }
 
 p{
@@ -134,57 +138,131 @@ p{
     line-height: 120%;
 }
 
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9),
+input:nth-of-type(10):checked ~ main figure:nth-of-type(10),
+input:nth-of-type(11):checked ~ main figure:nth-of-type(11){
+    opacity: 1;
+}
 
-/* p {
-	font-family: sans-serif;
-	line-height: 1.4em;
-	color: #222;
-	box-sizing: border-box;
-    padding-bottom: 2em;
-	} */
+div.gallery {
+    max-width: 60em;
+    margin: auto;
+    padding: 1em;
+}
 
-/* li {
-    display: inline;
-    text-decoration: none;
-    padding: 0.5rem;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: rgb(78, 102, 127);
+main.gallery{
+        position: relative;
+        overflow: hidden;
+        padding-bottom: calc(66% + 4em);
+}
+
+main.gallery figure{
+        margin: 0;
+        width: calc(100%-2em);
+        position: absolute;
+        opacity: 0;
+        transition: left 0.5s;
+}
+
+nav.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2em;
+}
+
+
+input {
+    display: none;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+form ul {
     list-style-type: none;
-} */
-
-
-/* caption {
-    padding-bottom: 2em;
 }
 
-section.secondary p{
-    padding-bottom: 1rem;
+form section.personal-info li {
+    display: grid;
 }
 
-section.tertiary p{
-    padding-bottom: 1em;
+form li {
+    margin: 0.25em 0;
 }
 
-figure{
-    padding-top: 1em;
-/* } */
+form section {
+    margin-top: 0.75em;
+}
 
-/* footer p {
-    color: #fafafa;
-    /* padding: auto;
-    padding-top: .75rem; 
-/* }  */
+form section.personal-info input {
+    max-width: 25em;
+    padding: 0.25em;
+}
+
+section.feedback textarea {
+    min-width: 25em;
+    font-family: neulis-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #280004;
+}
+
+input[type=text] {
+    font-family: neulis-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #280004;
+}
+
+h2.mag-description, h2.page-title {
+    font-size: 1.8em;
+    font-weight: 300;
+
+}
+
+button {
+    font-family: new-kansas, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #FAF4EF;
+    background-color: #d33d18;
+    width: 8em;
+    height: 3em;
+    border-style: none;
+    margin: 0.75em 0;
+    transition-duration: 0.2s;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #FAF4EF;
+    color: #d33d18;
+    border: 1px solid #d33d18;
+}
+
+form section h2, button, form ul, form textarea {
+    margin-left: 0.75em;
+}
+
 
 
 @media only screen and (min-width: 40em) {
   
-    header,h2,p { 
+    header,p { 
         margin: .2rem 0 0 ;
     }
 
     figcaption {
-        margin: .2rem 0 1em;
+        margin: .5rem 0.5rem 1em;
     }
 
     nav ul li {
@@ -196,18 +274,18 @@ figure{
     @media only screen and (min-width: 60em){
 
         div.home-container {
-            max-width: 80em;
+            max-width: 70em;
             padding: 0 1em;
             display: grid;
             grid-template-columns: 3fr 1fr;
             grid-gap: 1em;
         }
 
-        div.container {
-            max-width: 60em;
+        div.container{
+            max-width: 70em;
             padding: 0 1em;
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 5fr 2fr;
             grid-gap: 1em;
         }
 
@@ -253,15 +331,12 @@ figure{
         }
 
         section.mainstory a h2 {
-            flex: 0 0 1em;
+            flex: 0 0 0.5em;
         }
 
         section.mainstory a p {
             flex: 0 0 4em;
         }
-
-
-
 
 
         section.secondary {
@@ -289,6 +364,28 @@ figure{
 
         section.secondary a p {
             flex: 0 0 4em;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-column-gap: 2em;
+        }
+        
+        section.personal-info {
+            grid-row: 1/4; 
+        }
+    
+        section.subscription-type {
+            grid-row: 1/2;
+        }
+        
+        section.feedback {
+            grid-row: 2/3;
+        }
+    
+        button {
+            grid-row: 3/4;
         }
     }
 

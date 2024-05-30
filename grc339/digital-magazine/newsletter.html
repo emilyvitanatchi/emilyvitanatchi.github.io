@@ -1,0 +1,102 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" href="style.css">
+            <title>Emily Vitanatchi</title> <!-- This will be replaced with the actual name of the publication later.  -->
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+
+                <script>
+                    (function(d) {
+                      var config = {
+                        kitId: 'him8wse',
+                        scriptTimeout: 3000,
+                        async: true
+                      },
+                      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                    })(document);
+                  </script>
+            
+        </head>	
+
+        <body>
+            <div class="container">
+                
+            <header>
+                    <h1><a href="index.html"><img src="whitewashed logo outline.svg"
+                      alt="whitewashed logo"></a></h1>
+                <!-- Same header as the home page. -->
+
+                <nav href="#"> 
+                    <ul>
+                        <li><a >Identity</a></li>
+                        <li><a >Flavor</a></li>
+                        <li><a >Art and Media</a></li>
+                        <li><a >Favorite Children</a></li>
+                        <li><a href=newsletter.html> Subscribe</a></li>
+                    </ul>
+                </nav>
+                       </header>
+                       <h2 class="page-title">Stay connected and subscribe!</h2>
+                       <form>
+                          <section class="personal-info">
+                             <h2>Personal Information</h2>
+                             <ul>
+                                <li>
+                                   <label for="fname">First name:</label>
+                                   <input type="text" id="fname" name="fname">
+                                </li>
+                                <li>
+                                   <label for="lname">Last name:</label>
+                                   <input type="text" id="lname" name="lname">
+                                </li>
+                                <li>
+                                   <label for="email">Email:</label>
+                                   <input type="text" id="email" name="email">
+                                </li>
+                                <li>
+                                   <label for="city">City:</label>
+                                   <input type="text" id="city" name="city">
+                                </li>
+                                <li>
+                                   <label for="state">State:</label>
+                                   <input type="text" id="state" name="state">
+                                </li>
+                             </ul>
+                          </section>
+                          <section class="subscription-type">
+                             <h2>What would you like to hear from us?</h2>
+                             <ul>
+                                <li>
+                                   <input type="checkbox" id="newsletter" name="newsletter">
+                                   <label for="newsletter">Newletter</label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="new" name="new">
+                                   <label for="new">New features</label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="upcoming" name="upcoming">
+                                   <label for="upcoming">Upcoming Shows Near You</label>
+                                </li>
+                             </ul>
+                          </section>
+                          <section class="feedback">
+                             <h2>Suggestions, comments, or general wonders?</h2>
+                             <textarea id="feedback" name="feedback"></textarea>
+                          </section>
+                          <button type="submit">Sign Up</button>
+                       </form>
+                       <footer>
+                          <p>WhiteWashed Magazine. All rights reserved.</p>
+                       </footer>
+                    </div>
+                 </body>
+              </html>
+        
+
